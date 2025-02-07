@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
       ),
       debugShowCheckedModeBanner: false,
       // Ci dessous je définis la home page comme étant le widget AppController
-      home: const AppController(),
+      home: const AppController(title: 'Application MVC'),
     );
   }
 }
