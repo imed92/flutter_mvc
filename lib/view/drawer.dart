@@ -13,10 +13,16 @@ class DrawerView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Drawer(child: ListView.separated(
       itemBuilder: (context, index) {
-        return (const ListTile(title: Text("Mes pages")));
+        return (const ListTile(
+          title: Text("Mes pages"),
+          // Ici il faut faire la fonction qui va s'executer au moment ou vous cliquer sur un des éléments de la liste du drawer
+          // onTap: () { 
+
+          // }
+          ));
       }, 
       separatorBuilder: (BuildContext context, int index) => const Divider(),
-      itemCount: items.length + 1, // Construit tous les éléments de la liste
+      itemCount: items.length, // Construit tous les éléments de la liste
     ));
   }
 }
